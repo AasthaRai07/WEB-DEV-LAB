@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Creative Portfolio</title>
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <!-- Internal CSS -->
+  <style>
+    .glow-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 18px;
+      padding: 2px;
+      background: linear-gradient(120deg, #b96f71, #fad0c4, #8499bb);
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
+
+    .glow-card:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <h1>Aastha Rai</h1>
+    <p>Creative Web Developer</p>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="photo-box">
+      <img src="Image.jpg" alt="Profile">
+    </div>
+    <div class="intro">
+      <h2>Designing Experiences, Not Just Websites.</h2>
+      <p style="color:#3e1074; line-height: 1.8;">
+        I aspire to craft immersive digital experiences that blend creativity with usability.  
+        My desire is to build products that feel elegant, human, and meaningful.
+      </p>
+    </div>
+  </section>
+
+  <!-- Unique Sections -->
+  <section class="grid">
+    <div class="glow-card">
+      <h3>Hobbies</h3>
+      <p>Digital Art, Travel Photography, Music</p>
+    </div>
+    <div class="glow-card">
+      <h3>Passion</h3>
+      <p>Design Systems & User Experience</p>
+    </div>
+    <div class="glow-card">
+      <h3>Past Work</h3>
+      <p>Landing Pages, Dashboards, Personal Brands</p>
+    </div>
+    <div class="glow-card">
+      <h3>Social Life</h3>
+      <p>Tech Communities, Design Meetups</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>Let’s build something beautiful ✨</p>
+    <div class="links">
+      <a href="*">Instagram</a>
+      <a href="https://github.com/AasthaRai07">GitHub</a>
+      <a href="https://www.linkedin.com/in/aastha-rai-447a58315?utm_source=share_via&utm_content=profile&utm_medium=member_android">LinkedIn</a>
+    </div>
+  </footer>
+
+</body>
+</html>
+
