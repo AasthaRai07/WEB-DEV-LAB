@@ -24,6 +24,8 @@
         linear-gradient(#fff 0 0);
       -webkit-mask-composite: xor;
       mask-composite: exclude;
+
+        pointer-events: none;
     }
 
     .glow-card:hover {
@@ -47,10 +49,14 @@
     </div>
     <div class="intro">
       <h2>Designing Experiences, Not Just Websites.</h2>
-      <p style="color:#3e1074; line-height: 1.8;">
+     <p id="introText" style="line-height: 1.8;">
         I aspire to craft immersive digital experiences that blend creativity with usability.  
         My desire is to build products that feel elegant, human, and meaningful.
       </p>
+      <button onclick="changeIntroText()">Change Intro Text</button>
+      <button onclick="changeBgColor('#fde2e4')">Pink</button>
+      <button onclick="changeBgColor('#e2f0cb')">Green</button>
+      <button onclick="changeBgColor('#dee2ff')">Blue</button>
     </div>
   </section>
 
@@ -74,6 +80,16 @@
     </div>
   </section>
 
+  <section class="grid">
+  <div class="glow-card">
+    <h3>Skills (Dynamic List)</h3>
+    <ul id="skillList"></ul>
+
+    <button onclick="addSkill()">Add Skill</button>
+    <button onclick="removeSkill()">Remove Last Skill</button>
+  </div>
+</section>
+
   <!-- Footer -->
   <footer>
     <p>Let’s build something beautiful ✨</p>
@@ -83,7 +99,8 @@
       <a href="https://www.linkedin.com/in/aastha-rai-447a58315?utm_source=share_via&utm_content=profile&utm_medium=member_android">LinkedIn</a>
     </div>
   </footer>
-
+ 
+  <script src="portfolio.js"></script>
 </body>
 </html>
 
