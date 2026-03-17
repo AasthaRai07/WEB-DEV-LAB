@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #facaeb, #c0b3cd);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Card UI */
+.card {
+  background: rgb(238, 232, 237);
+  padding: 30px;
+  border-radius: 15px;
+  width: 320px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  border-color: black;
+}
+
+.card h2 {
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input:focus {
+  border-color: #667eea;
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #667eea;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #5a67d8;
+}
+
+/* Error */
+.error {
+  color: red;
+  font-size: 12px;
+  display: block;
+  text-align: left;
+}
+
+/* Result Box */
+.result {
+  margin-top: 20px;
+  background: #f0f4ff;
+  padding: 10px;
+  border-radius: 10px;
+}
